@@ -1,0 +1,3 @@
+[submodule "BrowserCookieInterfaces"]
+	path = BrowserCookieInterfaces
+	url = git@github.com:CommentViewerCollection/BrowserCookieInterfaces.git
