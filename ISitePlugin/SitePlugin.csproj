@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SitePlugin</RootNamespace>
     <AssemblyName>SitePlugin</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,8 +59,8 @@
     <Compile Include="SiteType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BrowserCookieInterfaces\BrowserCookieInterfaces\BrowserCookieInterfaces.csproj">
-      <Project>{a7240c99-693f-4ebb-8b4d-1d77207914c6}</Project>
+    <ProjectReference Include="$(SolutionDir)\BrowserCookieInterfaces\BrowserCookieInterfaces\BrowserCookieInterfaces.csproj">
+      <Project>{cdbbbf25-ad0c-4eaf-b673-eb0bb198585a}</Project>
       <Name>BrowserCookieInterfaces</Name>
     </ProjectReference>
   </ItemGroup>
