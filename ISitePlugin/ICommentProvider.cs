@@ -13,6 +13,7 @@ namespace SitePlugin
 {
     public interface ICommentProvider
     {
+        event EventHandler<ConnectedEventArgs> Connected;
         /// <summary>
         /// 
         /// </summary>
@@ -32,6 +33,14 @@ namespace SitePlugin
         event EventHandler CanDisconnectChanged;
         //TODO:どのアカウントでログインしているのかConnectionViewに表示したい
         //Task<IMyInfo> GetMyInfo(IBrowserProfile browserProfile);
+    }
+    public class ConnectedEventArgs : EventArgs
+    {
+        /// <summary>
+        /// 入力値の保存が必要か
+        /// YouTubeLiveの場合であれば、放送URLはfalse,channelURLはtrue
+        /// </summary>
+        public bool IsInputStoringNeeded { get; set; }
     }
     public interface IUser:INotifyPropertyChanged
     {
