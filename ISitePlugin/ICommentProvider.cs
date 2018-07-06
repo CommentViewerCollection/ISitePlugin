@@ -41,6 +41,10 @@ namespace SitePlugin
         /// YouTubeLiveの場合であれば、放送URLはfalse,channelURLはtrue
         /// </summary>
         public bool IsInputStoringNeeded { get; set; }
+        /// <summary>
+        /// 次回起動時にリストアするURL
+        /// </summary>
+        public string UrlToRestore { get; set; }
     }
     public interface IUser:INotifyPropertyChanged
     {
