@@ -16,6 +16,8 @@ namespace SitePlugin
         IOptionsTabPage TabPanel { get; }
         void SaveOptions(string path, IIo io);
         void LoadOptions(string path, IIo io);        
+        void Init();
+        void Save();
         ICommentProvider CreateCommentProvider();
         /// <summary>
         /// inputがこのサイトの入力値に適合しているか
