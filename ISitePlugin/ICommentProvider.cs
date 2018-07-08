@@ -33,6 +33,7 @@ namespace SitePlugin
         event EventHandler CanDisconnectChanged;
         //TODO:どのアカウントでログインしているのかConnectionViewに表示したい
         //Task<IMyInfo> GetMyInfo(IBrowserProfile browserProfile);
+        IUser GetUser(string userId);
     }
     public class ConnectedEventArgs : EventArgs
     {
