@@ -20,7 +20,7 @@ namespace SitePlugin
         string UserId { get; }
         IUser User { get; }
         ICommentProvider CommentProvider { get; }
-
+        bool Is184 { get; }
         bool IsInfo { get; }
         string PostTime { get; }
 
