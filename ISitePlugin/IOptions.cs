@@ -26,6 +26,8 @@ namespace SitePlugin
         Color VerticalGridLineColor { get; set; }
         Color InfoForeColor { get; set; }
         Color InfoBackColor { get; set; }
+        Color BroadcastInfoBackColor { get; set; }
+        Color BroadcastInfoForeColor { get; set; }
         Color SelectedRowBackColor { get; set; }
         Color SelectedRowForeColor { get; set; }
         bool IsUserNameWrapping { get; set; }
