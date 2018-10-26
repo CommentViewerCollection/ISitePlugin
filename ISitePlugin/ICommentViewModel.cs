@@ -13,6 +13,7 @@ namespace SitePlugin
 {
     public interface ICommentViewModel : INotifyPropertyChanged
     {
+        MessageType MessageType { get; }
         IEnumerable<IMessagePart> NameItems { get; }
         IEnumerable<IMessagePart> MessageItems { get; }
         string Info { get; }
@@ -21,7 +22,6 @@ namespace SitePlugin
         IUser User { get; }
         ICommentProvider CommentProvider { get; }
         bool Is184 { get; }
-        bool IsInfo { get; }
         string PostTime { get; }
 
         /// <summary>
