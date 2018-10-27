@@ -31,6 +31,7 @@ namespace SitePlugin
         Color SelectedRowBackColor { get; set; }
         Color SelectedRowForeColor { get; set; }
         bool IsUserNameWrapping { get; set; }
+        string SettingsDirPath { get; set; }
 
         ICommentOptions Clone();
         void Set(ICommentOptions options);
