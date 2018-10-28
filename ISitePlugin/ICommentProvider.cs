@@ -34,6 +34,12 @@ namespace SitePlugin
         //TODO:どのアカウントでログインしているのかConnectionViewに表示したい
         //Task<IMyInfo> GetMyInfo(IBrowserProfile browserProfile);
         IUser GetUser(string userId);
+
+        Task PostCommentAsync(string text);
+
+        //bool IsLoggedIn { get; }
+
+        //bool IsConnected { get; }
     }
     public class ConnectedEventArgs : EventArgs
     {
