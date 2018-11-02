@@ -9,6 +9,8 @@ using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Input;
+using System.Net;
+
 namespace SitePlugin
 {
     public interface ICommentProvider
@@ -40,6 +42,7 @@ namespace SitePlugin
         //bool IsLoggedIn { get; }
 
         //bool IsConnected { get; }
+        Task<ICurrentUserInfo> GetCurrentUserInfo(IBrowserProfile browserProfile);
     }
     public class ConnectedEventArgs : EventArgs
     {
