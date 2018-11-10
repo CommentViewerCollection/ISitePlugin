@@ -33,6 +33,10 @@ namespace SitePlugin
         bool IsUserNameWrapping { get; set; }
         string SettingsDirPath { get; set; }
 
+        bool IsActiveCountEnabled { get; set; }
+        int ActiveCountIntervalSec { get; set; }
+        int ActiveMeasureSpanMin { get; set; }
+
         ICommentOptions Clone();
         void Set(ICommentOptions options);
         void Reset();
