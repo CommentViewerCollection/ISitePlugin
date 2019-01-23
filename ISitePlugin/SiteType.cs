@@ -14,7 +14,7 @@ namespace SitePlugin
     public enum SiteType
     {
         NicoLive,
-        YouTUbeLive,
+        YouTubeLive,
         Openrec,
     }
 }
