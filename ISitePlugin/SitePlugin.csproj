@@ -50,15 +50,22 @@
     <Compile Include="ICommentViewModel.cs" />
     <Compile Include="ICurrentUserInfo.cs" />
     <Compile Include="IIo.cs" />
+    <Compile Include="IMessage.cs" />
+    <Compile Include="IMessageContext.cs" />
+    <Compile Include="IMessageMetadata.cs" />
+    <Compile Include="IMessageMethods.cs" />
     <Compile Include="IMetadata.cs" />
     <Compile Include="IOptions.cs" />
     <Compile Include="IOptionsTabPage.cs" />
     <Compile Include="ISiteContext.cs" />
     <Compile Include="IUserStore.cs" />
+    <Compile Include="IValueChanged.cs" />
+    <Compile Include="MessageBase.cs" />
     <Compile Include="MessagePart.cs" />
     <Compile Include="MessageType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteType.cs" />
+    <Compile Include="ValueChangedEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(SolutionDir)\BrowserCookieInterfaces\BrowserCookieInterfaces\BrowserCookieInterfaces.csproj">

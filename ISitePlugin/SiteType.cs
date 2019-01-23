@@ -16,5 +16,13 @@ namespace SitePlugin
         NicoLive,
         YouTubeLive,
         Openrec,
+        /// <summary>
+        /// ふわっち
+        /// </summary>
+        Whowatch,
+        LineLive,
+        Mirrativ,
+        Twicas,
+        Twitch,
     }
 }
