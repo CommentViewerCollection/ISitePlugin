@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SitePlugin
 {
@@ -6,6 +7,8 @@ namespace SitePlugin
     {
         public string Raw { get; }
         public abstract SiteType SiteType { get; }
+        public IEnumerable<IMessagePart> NameItems { get; set; }
+        public IEnumerable<IMessagePart> CommentItems { get; set; }
         public event EventHandler<ValueChangedEventArgs> ValueChanged;
         public void OnValueChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = "")
         {
