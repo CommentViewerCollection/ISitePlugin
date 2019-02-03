@@ -9,4 +9,11 @@ namespace SitePlugin
         IEnumerable<IMessagePart> NameItems { get; }
         IEnumerable<IMessagePart> CommentItems { get; }
     }
+    public interface IMessageComment : IMessage
+    {
+        string Id { get; }
+        string UserId { get; }
+        string PostTime { get; }
+        IMessageImage UserIcon { get; set; }
+    }
 }
