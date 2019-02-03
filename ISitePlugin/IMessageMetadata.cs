@@ -18,7 +18,7 @@ namespace SitePlugin
         bool IsNgUser { get; }
         bool IsSiteNgUser { get; }
         bool IsFirstComment { get; }
-        //bool IsInitialComment{get;}
+        bool IsInitialComment { get; }
         bool Is184 { get; }
         IUser User { get; }
         ICommentProvider CommentProvider { get; }
